@@ -64,8 +64,8 @@ const hydroMapConfig = {
     [108.80829, 22.86497]
   ],
   geoLabels: {
-    cutbank: { left: 21.5, top: 45.2 },
-    pointbar: { left: 25.6, top: 27.8 },
+    cutbank: { left: 25.6, top: 27.8 },
+    pointbar: { left: 21.5, top: 45.2 },
     terrace: { left: 64.0, top: 57.0 },
     meander: { left: 78.0, top: 68.0 },
     island: { left: 87.2, top: 37.0 }
