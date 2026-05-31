@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>邕江与南宁城市发展</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css?v=1.1" />
+    <script src="https://api.tianditu.gov.cn/api?v=4.0&tk=65e1e809bff3b713cf4401d586446302"></script>
+  </head>
+  <body>
+    <main class="deck" aria-live="polite">
+      <section class="slide hero-slide is-active" data-title="开篇" data-year="2026">
+        <div class="space-zoom" aria-hidden="true">
+          <div class="intro-fallback"></div>
+          <div class="video-wrapper">
+            <video class="intro-video" src="assets/video.mp4" autoplay muted playsinline preload="auto" onended="this.closest('.space-zoom').classList.add('video-ended')" onerror="this.closest('.space-zoom').classList.add('video-ended')"></video>
+          </div>
+          <div class="intro-video-shade"></div>
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">南宁市第二十六中学（五象校区） · 高一（7）班 · 七班小组</p>
+          <h1>邕江与南宁城市发展</h1>
+          <h2>Yongjiang River and Nanning's Urban Growth</h2>
+          <div class="credit-board">
+            <div class="credit-group">
+              <span class="credit-label">制作人员</span>
+              <div class="avatar-row">
+                <figure><img src="assets/lijiheng_touxiang.jpg" alt="李纪恒头像" /><figcaption>李纪恒</figcaption></figure>
+                <figure><img src="assets/yanglei_touxiang.jpg" alt="杨蕾头像" /><figcaption>杨蕾</figcaption></figure>
+                <figure><img src="assets/huangsining_touxiang.jpg" alt="黄思柠头像" /><figcaption>黄思柠</figcaption></figure>
+                <figure id="staff-wuzhekai"><img src="assets/wuzhekai_touxiang.jpg" alt="伍泽楷头像" /><figcaption>伍泽楷</figcaption></figure>
+              </div>
+            </div>
+            <div class="credit-group speaker">
+              <span class="credit-label">演讲人</span>
+              <figure><img src="assets/fangyihan_touxiang.jpg" alt="方羿涵头像" /><figcaption>方羿涵</figcaption></figure>
+            </div>
+            <div class="credit-group teacher">
+              <span class="credit-label">指导老师</span>
+              <figure><img src="assets/qiukana_touxiang.jpg" alt="丘卡娜头像" /><figcaption>丘卡娜</figcaption></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide contour-slide" data-title="地理环境" data-year="地形">
+        <div class="slide-heading">
+          <p class="eyebrow">地形骨架 · Terrain Framework</p>
+          <h2>于盆地、丘陵与河谷间，唤醒一座绿城</h2>
+        </div>
+        <div class="contour-layout">
+          <div class="contour-map">
+            <div class="elevation-map-wrapper">
+              <img src="assets/nanning_lvcity_map.png" class="elevation-img" alt="南宁绿城地图" />
+            </div>
+          </div>
+          <aside class="analysis-panel">
+            <h3>地理环境要点</h3>
+            <p>南宁位于广西南部，城市核心区沿邕江河谷展开，北、西、南侧多低山丘陵，形成“山地围合、河谷通廊、盆地生长”的空间格局。</p>
+            <ul>
+              <li><strong>河谷通达：</strong>邕江提供东西向生态廊道与早期交通联系。</li>
+              <li><strong>地势约束：</strong>丘陵边界让城市建设更偏向河谷、台地与冲积平原。</li>
+              <li><strong>生态基底：</strong>江、湖、湿地与绿廊构成城市蓝绿网络。</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="slide hydro-slide timeline-slide" data-title="水文特征" data-period="现状影像">
+        <div id="tdtMap" class="tdt-map"></div>
+        <div class="geo-annotations" aria-hidden="true">
+          <span class="pin" data-geo-label="cutbank">凹岸冲刷</span>
+          <span class="pin" data-geo-label="pointbar">凸岸堆积</span>
+          <span class="pin pin-with-popover pin-always-open" data-geo-label="terrace">
+            河流阶地
+            <span class="pin-popover" aria-hidden="true">
+              <img src="assets/yongjiang_heliujiedi.jpg" alt="河流阶地实景" />
+              <span>河流阶地实景</span>
+            </span>
+          </span>
+          <span class="pin" data-geo-label="meander">河曲</span>
+          <span class="pin pin-with-popover pin-always-open" data-geo-label="island">
+            江心洲
+            <span class="pin-popover pin-popover-up" aria-hidden="true">
+              <img src="assets/yongjiang_jiangxinzhou.jpg" alt="江心洲实景" />
+              <span>江心洲实景</span>
+            </span>
+          </span>
+        </div>
+        <aside class="year-sidebar">
+          <div class="year-wheel period-wheel" data-period="现状影像"></div>
+          <h3>水文特征 · Hydrology</h3>
+          <p>邕江在南宁城区呈弯曲穿城形态，河道两侧可识别出凹岸侵蚀、凸岸堆积、阶地利用与江心洲等典型地貌。城市滨江空间逐步从交通与取水岸线，转向防洪、景观、生态修复与公共活动复合岸线。</p>
+        </aside>
+      </section>
+
+      <section class="slide timeline-slide" data-title="早期沿江发展" data-period="1960-12~1997-12">
+        <div class="history-media">
+          <img src="assets/南宁市 1960-12~1997-12.gif" alt="南宁市1960至1997历史卫星影像" />
+        </div>
+        <aside class="year-sidebar">
+          <div class="warning-note">因年代久远，早期卫星影像覆盖范围与清晰度有限，局部区域可能存在缺幅、拼接或细节不足，主要用于观察城市沿江扩展的大致趋势。</div>
+          <div class="year-wheel period-wheel" data-period="1960-12~1997-12"></div>
+          <h3>沿江起步与跨江联系 · River-oriented Growth</h3>
+          <p>这一阶段城市建设主要依托邕江两岸较平坦的河谷与台地展开，老城、码头、桥梁和生产生活空间沿江联系紧密。随着跨江交通逐步完善，邕江从城市边界转变为连接两岸组团的重要轴线。</p>
+        </aside>
+      </section>
+
+      <section class="slide timeline-slide" data-title="新区建设与滨水治理" data-period="2005-06~2018-10">
+        <div class="history-media">
+          <img src="assets/南宁市 2005-06_2018-10.gif" alt="南宁市2005至2018历史卫星影像" />
+        </div>
+        <aside class="year-sidebar">
+          <div class="year-wheel period-wheel" data-period="2005-06~2018-10"></div>
+          <h3>新区拓展与滨水更新 · Expansion and Renewal</h3>
+          <p>城市建设强度提升，五象新区等片区加速形成，沿江道路、桥梁与公共空间推动城市向南、向东扩展。与此同时，滨江公园、慢行系统、防洪岸线和水环境整治同步推进，城市发展从“靠江建设”逐步转向“亲江生活”。</p>
+        </aside>
+      </section>
+
+      <section class="slide timeline-slide" data-title="蓝绿未来" data-period="2019-10~2025-10">
+        <div class="history-media">
+          <img src="assets/南宁市 2019-10_2025-10.gif" alt="南宁市2019至2025历史卫星影像" />
+        </div>
+        <aside class="year-sidebar">
+          <div class="year-wheel period-wheel" data-period="2019-10~2025-10"></div>
+          <h3>蓝绿共生 · Blue-green Future</h3>
+          <p>城市更新、轨道交通、跨江桥梁和滨江公共空间继续强化邕江轴线。面向未来，南宁的发展重点从规模扩张转向高质量更新、流域生态保护与蓝绿空间共享。</p>
+        </aside>
+      </section>
+
+      <section class="slide timeline-slide" data-title="结语" data-period="展望">
+        <div class="history-media">
+          <img src="assets/yongjiang_cross_bridge_background.png" alt="南宁邕江大桥与两岸风光" />
+        </div>
+        <aside class="year-sidebar">
+          <div class="year-wheel period-wheel" data-period="展望"></div>
+          <h3>江河奔流，生生不息 · Summary</h3>
+          <p>从昔日的河谷台地，到如今的生态宜居之城，邕江不仅哺育了南宁，更塑造了城市绿色与开放的发展灵魂。展望未来，一幅蓝绿交织、人水和谐的生态画卷正不断向前延伸。</p>
+          <div class="team-carousel">
+            <h4>团队成员 · Team Members</h4>
+            <div class="team-cards-container">
+              <!-- Card 0: 制作人员 -->
+              <div class="team-card active" data-team-card="0">
+                <span class="card-role">制作人员</span>
+                <div class="card-members">
+                  <div class="card-member"><img src="assets/lijiheng_touxiang.jpg" alt="李纪恒" /><span>李纪恒</span></div>
+                  <div class="card-member"><img src="assets/yanglei_touxiang.jpg" alt="杨蕾" /><span>杨蕾</span></div>
+                  <div class="card-member"><img src="assets/huangsining_touxiang.jpg" alt="黄思柠" /><span>黄思柠</span></div>
+                </div>
+              </div>
+              <!-- Card 1: 演讲人 -->
+              <div class="team-card" data-team-card="1">
+                <span class="card-role">演讲人</span>
+                <div class="card-members">
+                  <div class="card-member"><img src="assets/fangyihan_touxiang.jpg" alt="方羿涵" /><span>方羿涵</span></div>
+                </div>
+              </div>
+              <!-- Card 2: 指导老师 -->
+              <div class="team-card" data-team-card="2">
+                <span class="card-role">指导老师</span>
+                <div class="card-members">
+                  <div class="card-member"><img src="assets/qiukana_touxiang.jpg" alt="丘卡娜" /><span>丘卡娜</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="team-dots">
+              <button type="button" class="team-dot active" data-team-dot="0" aria-label="制作人员"></button>
+              <button type="button" class="team-dot" data-team-dot="1" aria-label="演讲人"></button>
+              <button type="button" class="team-dot" data-team-dot="2" aria-label="指导老师"></button>
+            </div>
+          </div>
+          <div class="ai-credits">
+            <h4>AI 协同创作致谢 · AI Credits</h4>
+            <ul>
+              <li>Gemini Flash 3.5</li>
+              <li>Gemini Omni</li>
+              <li>Claude Opus 4.6</li>
+              <li>ChatGPT 5.5</li>
+              <li>Antigravity</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <nav class="deck-nav" aria-label="幻灯片导航">
+      <button class="nav-btn prev" type="button" aria-label="上一页">‹</button>
+      <div class="dots" id="dots"></div>
+      <button class="nav-btn next" type="button" aria-label="下一页">›</button>
+    </nav>
+    <div class="progress" id="progress"></div>
+    <script src="app.js?v=1.1"></script>
+    <script>
+      (function () {
+        var deadline = new Date('2026-06-02T15:00:00+08:00');
+        if (new Date() > deadline) {
+          var el = document.getElementById('staff-wuzhekai');
+          if (el) el.style.display = 'none';
+        }
+      })();
+    </script>
+  </body>
+</html>
